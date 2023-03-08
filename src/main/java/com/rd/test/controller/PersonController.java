@@ -20,6 +20,16 @@ public class PersonController {
 
     @GetMapping("/persons")
     public ResponseEntity<?> getAllPersons() {
+
         return ResponseEntity.ok(this.personService.getAllPerson());
     }
+
+
+
+//    @GetMapping("/h2-console")
+//    public String h2Console() {
+//        return "forward:/console/";
+//
+//    }
+
 }
