@@ -19,8 +19,9 @@ public class PersonService {
         return this.repo.findAll();
     }
 
-    public PersonService(PersonRepo repo) {
 
-        this.repo = repo;
+    //CREATED ONLY FOR TESTING PURPOSE
+    public PersonService(PersonRepo personRepo){
+        this.repo = personRepo;
     }
 }
